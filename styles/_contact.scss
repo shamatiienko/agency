@@ -1,0 +1,80 @@
+// Styling for the contact
+
+#contact {
+    background-color: #222;
+    background-image: url(../images/map-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    .section-heading {
+        color: #fff;
+    }
+    .form-group {
+        margin-bottom: 25px;
+        input{
+            padding: 20px;
+        }
+        textarea.form-control {
+            height: 236px;
+        }
+        textarea {
+            padding: 20px;
+        }
+    }
+    .form-control:focus {
+        border-color: $color-primary;
+        box-shadow: none;
+    }
+    ::-webkit-input-placeholder {
+        font-weight: 700;
+        color: #eeeeee;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase; 
+    }
+    :-moz-placeholder {
+        font-weight: 700;
+        color: #eeeeee;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase; 
+    }
+    ::-moz-placeholder {
+        font-weight: 700;
+        color: #eeeeee;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase; 
+    }
+     :-ms-input-placeholder {
+        font-weight: 700;
+        color: #eeeeee;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase; 
+     }
+}
+
+.btn-xl {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 3px;
+    color: #fff;
+    border-color: $color-primary;
+    background-color: $color-primary;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    &.focus, &:focus {
+        color: white;
+        border-color: #b48b01;
+        background-color: $primary-hover;
+    }
+    &:hover {
+    color: white;
+    border-color: #f6bf01;
+    background-color: $primary-hover; 
+    }
+    &.active, &:active{
+        background-image: none;
+    }
+}
+
+label{
+    color: $color-danger;
+}

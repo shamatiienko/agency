@@ -1,0 +1,69 @@
+// Global styling for this template
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+    //Підсвічування вказує користувачеві планшета,наприклад, що їх крапка успішно розпізнається, і вказує, який елемент вони торкаються.
+    -webkit-tap-highlight-color: $color-primary;
+}
+
+a {
+    color: $color-primary;
+    &:active, &.active, &:focus, &:hover {
+        color: $primary-hover;
+    }
+}
+
+p {
+    line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 100px 0;
+    .section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .section-subheading {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+}
+
+@media (min-width: 768px){
+    section {
+        padding: 130px 0;
+    }
+}
+
+// Highlight color customization
+
+::-moz-selection {
+    background: $color-primary;
+    text-shadow: none;
+}
+
+::selection{
+    background: $color-primary;
+    text-shadow: none;
+} 
+
+img::-moz-selection{
+    background:0 0
+}
+
+img::selection {
+    background: none;
+}

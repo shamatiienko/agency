@@ -1,0 +1,66 @@
+// Styling for the navbar
+
+#mainNav {
+    background-color: #222;
+    .navbar-brand {
+        color: $color-primary;
+        font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial, 'cursive';
+        &:active, &:focus, &:hover{
+            color: $primary-hover;
+        }
+    }
+    .navbar-toggler {
+        font-size: 12px;
+        right: 0;
+        padding: 13px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 0;
+        background-color: $color-primary;
+        font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-size: 90%;
+                font-weight: 400;
+                padding: .75em 0;
+                letter-spacing: 1px;
+                color: #fff;
+                font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                text-transform: uppercase;
+                &:hover, &.active {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    #mainNav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: padding-top .3s,padding-bottom .3s;
+        border: none;
+        background-color: transparent;
+        .navbar-brand {
+            font-size: 1.75em;
+            transition: all .3s;
+        }
+        .navbar-nav {
+            .nav-link {
+                padding: 1.1em 1em!important;
+            }
+         }
+        &.navbar-shrink{
+            padding-top: 3px;
+            padding-bottom: 3px;
+            background-color: #222222; 
+            .navbar-brand {
+                font-size: 1.25em;
+                padding: 12px 0;
+            }
+        }
+    }
+}

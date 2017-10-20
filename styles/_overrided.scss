@@ -1,0 +1,24 @@
+// Bootstrap overrides for this template
+// Змінені бутстраповські класи
+
+.text-primary {
+    color: $color-primary !important;
+}
+
+.text-danger {
+    color: $color-danger !important;
+}
+
+.btn-primary {
+    font-weight: 700;
+    color: #fff;
+    border-color: $color-primary;
+    background-color: $color-primary;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff;
+        border-color: #f6bf01;
+        background-color: $primary-hover;
+    }
+}
